@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>LR GamerShop — Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="hdr">
+    <div class="container navbar">
+      <div class="brand">
+        <img src="img/logo.png" alt="Logo LR GamerShop" class="logo-img">
+        <div class="brand__name">LR GamerShop</div>
+      </div>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contáctanos</a>
+        <a class="btn--ghost" href="login.html">Iniciar sesión</a>
+      </nav>
+      <button id="burger" class="burger btn" aria-expanded="false" aria-controls="drawer">Menú</button>
+    </div>
+  </header>
+
+  <main class="page">
+  <!--Carrusel-->
+    <section class="section">
+      <div class="container">
+        <div class="carousel" role="region" aria-label="Promociones destacadas">
+          <div class="carousel__track" id="carouselTrack">
+            <div class="carousel__slide is-active">
+              <img src="img/slide1.jpg" alt="Ofertas en consolas PS5 y Xbox Series" />
+              <div class="carousel__caption">
+                <h2>Juegos de ultimo momento</h2>
+                <p>PS5, XBOX y Switch 2</p>
+                <a class="btn" href="productos.html">Ver catálogo</a>
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <img src="img/slide2.avif" alt="Accesorios gamer audífonos y mandos" />
+              <div class="carousel__caption">
+                <h2>Juegos de switch 2</h2>
+                <p>Metroid.</p>
+                <a class="btn" href="productos.html">Explorar</a>
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <img src="img/slide3.avif" alt="Juegos destacados para Nintendo Switch" />
+              <div class="carousel__caption">
+                <h2>Ultimos lanzamientos</h2>
+                <p>Mario Kart World.</p>
+                <a class="btn" href="productos.html">Comprar ahora</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel__control prev" id="prevBtn" aria-label="Anterior">
+            <i class="bi bi-chevron-left" aria-hidden="true"></i>
+          </button>
+          <button class="carousel__control next" id="nextBtn" aria-label="Siguiente">
+            <i class="bi bi-chevron-right" aria-hidden="true"></i>
+          </button>
+
+          <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Seleccionar diapositiva"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- juegos destacados -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Productos destacados</h2>
+        <div class="cards">
+          <article class="card product">
+            <img class="product__img" src="img/game1.jpg" alt="Juego destacado 1" />
+            <div class="product__body">
+              <div class="kicker">Juego</div>
+              <h3 class="product__title">The Legend of Zelda Tears in the Kingdom</h3>
+              <div class="price">Q 500.00</div>
+              <a class="btn" href="productos.html">Ver detalles</a>
+            </div>
+          </article>
+          <article class="card product">
+            <img class="product__img" src="img/game2.jpg" alt="Juego destacado 2" />
+            <div class="product__body">
+              <div class="kicker">Juego</div>
+              <h3 class="product__title">God of War Ragnarok</h3>
+              <div class="price">Q 450.00</div>
+              <a class="btn" href="productos.html">Ver detalles</a>
+            </div>
+          </article>
+          <article class="card product">
+            <img class="product__img" src="img/game3.png" alt="Juego destacado 3" />
+            <div class="product__body">
+              <div class="kicker">Juego</div>
+              <h3 class="product__title">FC26</h3>
+              <div class="price">Q 479.00</div>
+              <a class="btn" href="productos.html">Ver detalles</a>
+            </div>
+          </article>
+          <article class="card product">
+            <img class="product__img" src="img/game4.avif" alt="Juego destacado 4" />
+            <div class="product__body">
+              <div class="kicker">Juego</div>
+              <h3 class="product__title">Spider-man 2</h3>
+              <div class="price">Q 399.00</div>
+              <a class="btn" href="productos.html">Ver detalles</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer-->
+  <footer>
+    <div class="container footer__inner">
+      <p>© 2025 LR GamerShop. Todos los derechos reservados.</p>
+      <aside class="redes">
+        <a href="https://www.facebook.com" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.twitter.com" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.youtube.com" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      </aside>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

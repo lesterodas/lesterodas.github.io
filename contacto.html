@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>LR GamerShop — Contáctanos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hdr">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true"></div>
+        <img src="img/logo.png" alt="Logo LR GamerShop" class="logo-img">
+        <div class="brand__name">LR GamerShop</div>
+      </div>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html" class="active">Contáctanos</a>
+        <a class="btn--ghost" href="login.html">Iniciar sesión</a>
+      </nav>
+      <button id="burger" class="burger btn" aria-expanded="false" aria-controls="drawer">Menú</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Contáctanos</h1>
+<!--Formulario-->
+      <div class="grid" style="gap:1.2rem;">
+        <div class="card" style="grid-column: span 7; padding:1.2rem;">
+          <h3>Escríbenos</h3>
+          <form action="guardar_contacto.php" method="POST" aria-label="Formulario de contacto">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" required />
+
+            <label for="correo">Correo</label>
+            <input id="correo" name="correo" type="email" required />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button class="btn" type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+
+        <!--cuadro de información-->
+        <aside class="card" style="grid-column: span 5; padding:1.2rem;">
+          <h3>Información</h3>
+          <p class="kicker">¡Visítanos o llámanos!</p>
+          <ul style="list-style:none; padding:0; margin:0;">
+            <li><strong>Teléfono:</strong> +502 5242-4361</li>
+            <li><strong>Email:</strong> lrgamershop@gmai.com</li>
+            <li><strong>Sucursal:</strong> 5a Av. 12-34, Ciudad de Guatemala</li>
+            <li><strong>Los Próceres:</strong> CC Los Próceres, Local 12</li>
+            <li><strong>Oakland:</strong> Local 104</li>
+          </ul>
+          <div style="height:12px;"></div>
+          <a class="btn" href="https://maps.google.com" target="_blank" rel="noopener">Ver ubicaciones</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer__inner">
+      <p>© 2025 LR GamerShop. Todos los derechos reservados.</p>
+      <aside class="redes">
+        <a href="https://www.facebook.com" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.twitter.com" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.youtube.com" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      </aside>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
